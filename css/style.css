@@ -1,0 +1,48 @@
+.logo-revou {
+  height: 50px;
+  width: 50px;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+}
+nav > section {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.banner-content {
+  border: 1px solid black;
+  height: 250px;
+}
+.facilities {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-result {
+  border: 1px solid black;
+  height: 100px;
+}
+.Message-us-section {
+  display: flex;
+}
+.result-container {
+  width: 100%;
+}
