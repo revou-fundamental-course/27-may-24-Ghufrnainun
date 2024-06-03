@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .logo-revou {
   height: 50px;
   width: 50px;
@@ -27,9 +33,23 @@ nav > section {
   text-decoration: none;
   color: black;
 }
-.banner-content {
-  border: 1px solid black;
-  height: 250px;
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/pexels-veeterzy-303383.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.home-content {
+  font-size: 30px;
+  font-weight: 500;
 }
 .facilities {
   display: flex;
