@@ -8,37 +8,39 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="logo-revou"></div>
-
-      <section>
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#facilities">Facilitation</a>
-        <a class="nav-item" href="#">Contact</a>
-        <a class="nav-item" href="#message-us">Message Me</a>
-      </section>
-    </nav>
+    <header class="header-wrapper">
+      <nav class="header">
+        <div class="logo-revou"></div>
+        <section class="navbar">
+          <a href="#home">Home</a>
+          <a href="#facilities">Facilitation</a>
+          <a href="#">Contact</a>
+          <a href="#message-us">Message Me</a>
+        </section>
+      </nav>
+    </header>
     <hr />
 
     <section id="home">
       <!-- Home -->
-      <section class="home">
-        <header class="header-welcome">
-          <h1>
-            Hi<span class="name-user" id="name"> Ghufron</span> Welcome to my
-            Website
-          </h1>
-          <br />
-        </header>
-        <article class="home-content">
-          <div class="">
-            <p>
-              Halo semua, nama saya Ghufron Ainun Najib. Saya sedang belajar
-              membuat website
-            </p>
-          </div>
-        </article>
-      </section>
+      <section class="slider-container" id="home">
+        <div class="slider-item">
+            <img src="assets/img/pexels-pixabay-39284.jpg" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="assets/img/pexels-markusspiske-177598.jpg" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="assets/img/pexels-danbuilds-633409.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/img/pexels-veeterzy-303383.jpg" alt="">
+        </div>
+    </div>
+    <div class="content">
+        <h1>Hi <span id="name"></span> welcome to website</h1>
+        <p>Ini adalah website latihan pertama.</p>
+    </section>
       <hr />
       <!-- Facilitation -->
       <section id="facilities">
@@ -78,22 +80,32 @@
           <!-- form -->
 
           <section>
-            <form name="message-form" onsubmit="return validateForm()">
-              Nama: <input type="text" placeholder="Nama" name="full=name" />
+            <form
+              class="form-inline"
+              name="message-form"
+              onsubmit="return validateForm()"
+            >
+              <label for="name">Nama:</label>
+              <input
+                type="text"
+                placeholder="Nama"
+                name="full-name"
+                id="name"
+              />
               <br />
 
-              Tanggal Lahir:
+              <label for="birthDate">Tanggal Lahir:</label>
               <input type="date" name="birth-date" id="" />
               <br />
 
-              Jenis Kelamin:
+              <label for="gender">Jenis Kelamin:</label>
               <input type="radio" name="gender" id="male" value="male" />
               <label for="male">Laki-Laki</label>
               <input type="radio" name="gender" id="female" value="female" />
               <label for="female">Perempuan</label>
               <br />
 
-              Pesan:
+              <label for="messages">Pesan:</label>
               <textarea
                 name="messages"
                 id="messages"
@@ -102,7 +114,12 @@
                 placeholder="Pesan"
               ></textarea>
               <br />
-              <input type="submit" value="submit" />
+              <input
+                type="submit"
+                value="submit"
+                class="submit"
+                onclick="validateForm()"
+              />
             </form>
           </section>
           <!-- result -->
@@ -119,7 +136,7 @@
     </section>
 
     <footer>
-      <p>Sofware Engineering RevoU</p>
+      <p>Sofware Engineering Fundamental Course,RevoU</p>
     </footer>
 
     <script src="js/script.js"></script>
