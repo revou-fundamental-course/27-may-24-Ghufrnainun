@@ -18,14 +18,13 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  background-color: rgb(0 151 2);
   padding: 16px 24px;
   align-items: center;
 }
 .header > .navbar {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .nav-item {
   padding: 8px 16px;
@@ -107,7 +106,7 @@ body {
 }
 
 .content h1 span {
-  color: green;
+  color: blue;
 }
 
 .content p {
@@ -146,7 +145,8 @@ section #programming {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  background-color: yellow;
+  background-color: rgb(204 204 204);
+  color: black;
 }
 .dev-detail > img {
   width: 100%;
@@ -202,14 +202,14 @@ select {
 
 .form-container input[type="submit"] {
   padding: 8px 16px;
-  background-color: green;
+  background-color: rgb(204 204 204);
   border: 1px solid #ddd;
-  color: white;
+  color: black;
   width: 100%;
   cursor: pointer;
 }
 .form-container input[type="submit"]:hover {
-  background-color: chartreuse;
+  background-color: rgb(0 151 2);
 }
 
 .form-result {
@@ -240,7 +240,7 @@ select {
 footer {
   padding: 20px;
   color: white;
-  background-color: blue;
+  background-color: rgb(0 151 2);
   text-align: center;
   font-weight: bold;
 }
