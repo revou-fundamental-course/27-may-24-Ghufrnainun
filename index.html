@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ghufrnainun Portfolio</title>
+    <title>Ghufrnainun Project</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -12,10 +12,9 @@
       <nav class="header">
         <div class="logo-revou"></div>
         <section class="navbar">
-          <a href="#home">Home</a>
-          <a href="#facilities">Facilitation</a>
-          <a href="#">Contact</a>
-          <a href="#message-us">Message Me</a>
+          <a href="#home" class="nav-item"> Home </a>
+          <a href="programming" class="nav-item"> Programming </a>
+          <a href="#message-us" class="nav-item"> Message Me </a>
         </section>
       </nav>
     </header>
@@ -42,46 +41,52 @@
         <p>Ini adalah website latihan pertama.</p>
     </section>
       <hr />
-      <!-- Facilitation -->
-      <section id="facilities">
-        <header>Our Facilities</header>
+      <!-- Programming -->
+      <section id="programming">
+        <header class="programming-header">
+        <h1><span>Programming</span></h1>
+        </header>
 
-        <article class="facilities">
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Free water</h5>
+        <article class="article-dev">
+          <div class="dev-detail">
+            <img src="assets/img/Fullstack-developer.jpg" alt="">
+            <div>
+              <h2> Fullstack developer </h2>
+              <p>Full stack developer adalah seorang programmer yang bertanggung jawab untuk membuat dan memperbaiki website atau aplikasi, baik front end maupun back end. Full stack developer harus memiliki kemampuan di berbagai hal, mulai dari user interface, konfigurasi server, dan database.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Free water</h5>
+          <div class="dev-detail">
+            <img src="assets/img/frontend-developer.png" alt="">
+            <div>
+              <h2> Front End Developer </h2>
+              <p>Front End Developer adalah seorang profesional dalam bidang teknologi informasi yang bertanggung jawab untuk mengembangkan dan memelihara bagian depan suatu website.</p>
+            </div>
           </div>
 
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Free water</h5>
+          <div class="dev-detail">
+            <img src="assets/img/backend-developer.png" alt="">
+            <div>
+              <h2> Backend Developer </h2>
+              <p>Back end developer adalah orang yang bertugas membangun dan mengembangkan sisi server, yang memproses data dan menjalankan sebuah website atau aplikasi. Mereka harus memastikan sebuah website atau aplikasi berjalan dengan baik</p>
+            </div>
           </div>
         </article>
       </section>
 
       <!-- Message us -->
       <section id="message-us">
-        <header>
+        <header class="h1-messages">
           <h1>Message</h1>
         </header>
 
         <section class="Message-us-section">
           <!-- form -->
 
-          <section>
+          <section class="form-container">
             <form
-              class="form-inline"
+              class="form"
               name="message-form"
               onsubmit="return validateForm()"
             >
@@ -109,8 +114,7 @@
               <textarea
                 name="messages"
                 id="messages"
-                cols="30"
-                rows="10"
+                
                 placeholder="Pesan"
               ></textarea>
               <br />

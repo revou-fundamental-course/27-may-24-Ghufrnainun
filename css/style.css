@@ -18,18 +18,19 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: azure;
+  background-color: blue;
   padding: 16px 24px;
   align-items: center;
 }
 .header > .navbar {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-a {
-  border: 1px solid gray;
+.nav-item {
   padding: 8px 16px;
   background-color: white;
+  border: 1px solid;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -38,6 +39,9 @@ a {
   -moz-transition: 0.3s background-color ease-out;
   -ms-transition: 0.3s background-color ease-out;
   -o-transition: 0.3s background-color ease-out;
+}
+.nav-item:hover {
+  background-color: chocolate;
 }
 
 .slider-container {
@@ -112,46 +116,131 @@ a {
   font-weight: 100;
 }
 
-.facilities {
+section #programming {
+  padding: 20px 20px;
+}
+
+.programming-header {
+  font: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.article-dev {
   display: flex;
   justify-content: space-around;
+  align-items: start;
+  flex-direction: row;
+  margin: auto auto;
+}
+.dev-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: auto;
+  max-width: 300px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: yellow;
+}
+.dev-detail > img {
+  width: 100%;
+}
+.dev-detail > p {
+  width: 100%;
+}
+.dev-detail > h2 {
+  font-weight: bold;
+  margin: 2px 0 2px 0;
+}
+.h1-messages {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+.form-container {
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  flex: 1;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.form-container label {
+  margin: 5px 10px 5px 0;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#messages {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  padding: 8px 16px;
+  background-color: green;
+  border: 1px solid #ddd;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+  background-color: chartreuse;
 }
 
 .form-result {
   border: 1px solid black;
-  height: 100px;
+  height: 300px;
+
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .Message-us-section {
   display: flex;
+
+  justify-content: left;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .result-container {
-  width: 100%;
+  flex: 1;
+  padding: 20px;
 }
 
-.form-inline {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-inline label {
-  margin: 5px 10px 5px 0;
-}
-
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-}
-.form-inline .submit {
-  padding: 8px 16px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
-  color: white;
-}
 footer {
   padding: 20px;
   color: white;
-  background-color: darkblue;
+  background-color: blue;
   text-align: center;
   font-weight: bold;
 }
@@ -172,12 +261,12 @@ footer {
   .logo-revou {
     margin-bottom: 14px;
   }
-  .form-inline input {
-    margin: 10px 0;
+  .article-dev {
+    flex-direction: column;
+    margin: 5px 5px 5px 5px;
   }
 
-  .form-inline {
+  .Message-us-section {
     flex-direction: column;
-    align-items: stretch;
   }
 }
